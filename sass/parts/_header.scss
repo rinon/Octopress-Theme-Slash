@@ -10,21 +10,27 @@ $header-height: 30px;
 		position: relative;
 		padding-bottom: 10px;
 	}
-	a{
-		color: $color-gray01;
-		@include transition(color 0.3s);
-		&:hover{
-			color: $color-main;
+  div#title{
+		float: left;
+		@media screen and (max-width: 1040px){
+			float: none;
 		}
-	}
+  }    
 	h1{
 		float: left;
 		font-weight: 300;
 		font-size: 30px;
+	}
+  h2{
+    color: $color-base01;
+    float: left;
+		font-weight: 300;
+		font-size: 24px;
+    clear: left;
 		@media screen and (max-width: 1040px){
 			float: none;
 		}
-	}
+  }
 }
 #main-nav{
 	float: left;
@@ -109,7 +115,7 @@ $header-height: 30px;
 					padding: 5px 15px;
 					&:after{
 						content: "\f054";
-						color: $color-gray02;
+						color: $color-gray03;
 						font: 12px $font-icon;
 						padding-left: 10px;
 					}
