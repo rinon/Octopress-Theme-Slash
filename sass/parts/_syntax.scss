@@ -15,7 +15,7 @@ $solar-blue:      #268bd2 !default;
 $solar-cyan:      #2aa198 !default;
 $solar-green:     #859900 !default;
 
-$solarized: light !default;
+$solarized: dark !default;
 
 @if $solarized == light {
 
@@ -38,19 +38,19 @@ $solarized: light !default;
   $base3:   $_base03;
 }
 
-$pre-bg: $color-gray04;
+$pre-bg: $base03;
 $pre-border: $color-gray03;
 
 article{
 	code, pre{
 		background: $pre-bg;
-		border: 1px solid $pre-border;
+		/* border: 1px solid $pre-border; */
 		font-family: $font-mono;
 	}
 	code{
 		font-size: 0.9em;
-		padding: 1px 3px;
-		margin: 0 3px;
+		/* padding: 1px 3px; */
+		/* margin: 0 3px; */
 		@include border-radius(5px);
 	}
 	pre{
